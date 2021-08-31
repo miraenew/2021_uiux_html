@@ -1,0 +1,85 @@
+@charset "UTF-8";
+h1 {
+    width: 125px;
+    height: 30px;
+    margin: 20px auto;
+    background-image: url(../images/naver.png);
+}
+h1 a {
+    display: block;
+    height: 30px;
+    text-indent: -9999px;
+}
+.nav {
+    width: 140px;
+    height: 350px;
+    background-image: url(../images/top_gnb.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.nav li:nth-child(1) {
+    background-position: 0 50px;
+}
+.nav li:nth-child(2) {
+    background-position: 0 100px;
+}
+.nav li:nth-child(3) {
+    background-position: 0 150px;
+}
+.nav li:nth-child(4) {
+    background-position: 0 200px;
+}
+.nav li:nth-child(5) {
+    background-position: 0 250px;
+}
+.nav li:nth-child(6) {
+    background-position: 0 300px;
+}
+.nav li:nth-child(7) {
+    background-position: 0 350px;
+}
+/* 여기 아래부터 제작 */
+.nav li:nth-child(1):hover {
+    background-position: 0 -50px;
+}
+.nav li:nth-child(2):hover {
+    background-position: -140px -50px;
+}
+.nav li:nth-child(3):hover {
+    background-position: -280px -50px;
+}
+.nav li:nth-child(4):hover {
+    background-position: -420px -50px;
+}
+
+.nav li:nth-child(5):hover {
+    background-position: -560px -50px;
+}
+.nav li:nth-child(6):hover {
+    background-position: -700px -50px;
+}
+.nav li:nth-child(7):hover {
+    background-position: -840px -50px;
+}
+.nav li:nth-child(1).active {
+    background-position: 0 -50px;
+}
+.nav li:nth-child(2).active {
+    background-position: -140px -50px;
+}
+.nav li:nth-child(3).active {
+    background-position: -280px -50px;
+}
+.nav li:nth-child(4).active {
+    background-position: -420px -50px;
+}
+
+.nav li:nth-child(5).active {
+    background-position: -560px -50px;
+}
+.nav li:nth-child(6).active {
+    background-position: -700px -50px;
+}
+.nav li:nth-child(7).active {
+    background-position: -840px -50px;
+}

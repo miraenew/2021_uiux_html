@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* .box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: -3px;
+}
+.box:nth-child(1) {
+   background-color: rgb(34, 116, 163);
+}
+.box:nth-child(2) {
+   background-color: rgb(231, 162, 13);
+}
+.box:nth-child(3) {
+   background-color: rgb(150, 202, 29);
+} */
+body {
+    background-image: url(../../images/bg_grid.gif);
+}
+.box1, .box2, .box3 {
+    width: 100px;
+    height: 100px;
+}
+.box1 {
+    background-color: #22a;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box2 {
+    background-color: #d6e;
+    position: relative;
+    right: 20px;
+    bottom: 50px;
+}
+.box3 {
+    background-color: rgb(17, 3, 80);
+}

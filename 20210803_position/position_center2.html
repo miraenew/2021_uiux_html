@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        h1 {
+            float: left;
+            text-align: center;
+            line-height: 200px;
+        }
+        h1 a {
+            display: inline-block;
+            background-color: rgb(73, 87, 167);
+            width: 200px;
+            height: 200px;
+        }
+        #util {
+            
+        }
+        #util>ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+        #util>ul>li>a {
+            display: block;
+            background-color: rgb(207, 152, 218);
+            width: 50px;
+        }
+        #gnb>ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+        #gnb>ul>li>a {
+            display: block;
+            background-color: rgb(202, 66, 66);
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+        <header id="header">
+            <h1><a href="#">logo</a></h1>
+            <div id="util">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+</body>
+</html>

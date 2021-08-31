@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .hdTopWrap {
+            background: rgb(42, 67, 180) url(../images/topbg01.png) no-repeat center;
+        }
+        .headerTop {
+            width: 980px;
+            height: 90px;
+            margin: 0 auto;
+            color: #fff;
+            position: relative;
+            /* height: 50px; */
+        }
+        /* position */
+        /* h1 {
+            width: 100px;
+            background: rgb(8, 135, 151);
+        }
+        .search {
+            position: absolute;
+            top: 0;
+            left: calc( 50% - 100px);
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background: rgb(255, 154, 2);
+        }
+        .snsMenu {
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            background: rgb(0, 255, 42);
+            right: 0;
+            top: 0;
+        } */
+
+
+        /* float */
+        /* h1 {
+            width: 100px;
+            background: rgb(0, 183, 255);
+            float: left;
+        }
+        .search {
+            float: left;
+            width: 200px;
+            height: 50px;
+            background: rgb(255, 136, 0);
+            margin-left: 200px;
+        }
+        .snsMenu {
+            float: right;
+            width: 300px;
+            height: 50px;
+            background: rgb(0, 160, 0);
+        } */
+        .headerTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1{
+            width: 100px;
+            background: rgb(0, 162, 255);
+        }
+        .search {
+            width: 200px;
+            background: rgb(255, 123, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .snsMenu{
+            width: 300px;
+            background: rgb(43, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="hdTopWrap">
+            <div class="headerTop"> <!--w980-->
+                <h1><a href="#">logo</a></h1>
+                <div class="search">검색</div>
+                <div class="snsMenu">sns</div>
+            </div>
+        </div>
+        <div class="headerBt"></div>
+    </header>
+    <style>
+        .box{
+            width: 1000px;
+            height: 400px;
+            margin: 0 auto;
+            background: rgb(114, 114, 114);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background: rgb(255, 0, 0);
+        }
+        .box2 {
+            background: rgb(4, 0, 255);
+        }
+        .box3 {
+            background: rgb(0, 148, 57);
+        }
+    </style>
+    <div class="box">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+</body>
+</html>

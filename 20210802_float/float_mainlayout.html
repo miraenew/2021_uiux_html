@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            color: #333;
+        }
+        a {
+            display: block;
+        }
+        .flexContainer {
+            display: flex;
+        }
+        #header {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: rgb(240, 147, 147);
+        }
+        h1 {
+            text-align: center;
+            height: 200px;
+            line-height: 200px;
+        }
+        li.mainLi {
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            text-align: center;
+        }
+        li.mainLi>a {
+            display: block;
+            background-color: rgb(172, 218, 47);
+        }
+        li.mainLi>a:hover {
+            color: #fff;
+            background-color: #333;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: rgb(58, 65, 158);
+        }
+        #aside {
+            float: left;
+            width: 400px;
+            height: 350px;
+            line-height: 350px;
+            text-align: center;
+            background-color: rgb(17, 228, 87);
+        }
+        #content {
+            flex: 1;
+            height: 350px;
+            line-height: 350px;
+            text-align: center;
+            background-color: rgb(243, 0, 101);
+        }
+        #footer {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: rgb(71, 16, 16);
+            height: 200px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+            <h1><a href="#">Logo</a></h1>
+            <nav id="gnb">
+                <ul id="mainMenu" class="clearfix">
+                    <li class="mainLi"><a href="#">menu1</a></li>
+                    <li class="mainLi"><a href="#">menu2</a></li>
+                    <li class="mainLi"><a href="#">menu3</a></li>
+                    <li class="mainLi"><a href="#">menu4</a></li>
+                    <li class="mainLi"><a href="#">menu5</a></li>
+                    <li class="mainLi"><a href="#">menu6</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div id="container" class="flexContainer">
+        <div id="aside">
+            aside
+        </div>
+        <div id="content">
+            content
+        </div>
+    </div>
+    <footer id="footer">
+        footer
+    </footer>
+</body>
+</html>
