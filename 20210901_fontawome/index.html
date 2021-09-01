@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontawesome</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: rgb(30, 168, 223);
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hand {
+            font-size: 3em;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .box:hover {
+            background: rgb(39, 0, 214);
+        }
+        .box:hover .hand {
+            color: rgb(255, 238, 0);
+        }
+        .box.active {
+            background: #00f;
+        }
+        .box.active .hand {
+            background: rgb(232, 255, 28);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <i class="fab fa-angellist hand"></i>
+</div>
+<div class="box active">
+    <i class="fas fa-baby-carriage hand"></i>
+</div>
+</body>
+</html>
