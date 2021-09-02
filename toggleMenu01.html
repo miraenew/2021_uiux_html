@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggleMenu</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <style>
+        .toggleMenu {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 1;
+        }
+        .toggleMenu div {
+            width: 34px;
+            height: 5px;
+            background: #000;
+            border-radius: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+        }
+        .toggleMenu .bar1{
+            top: 10px;
+        }
+        .toggleMenu .bar3{
+            top: 40px;
+        }
+        .toggleMenu.active .bar1 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        .toggleMenu.active .bar2 {
+            opacity: 0;
+        }
+        .toggleMenu.active .bar3 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        .topMenu {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 157, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: -100px;
+        }
+        .topNavi {
+            width: 50%;
+        }
+        .topMenu a {
+            display: block;
+            background: rgb(179, 77, 77);
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".toggleMenu").click(function(){
+
+            if($(".toggleMenu").attr("class") == "toggleMenu"){
+                $(".toggleMenu").addClass("active");
+                $(".topMenu").stop().animate({left:0},300);
+            }
+            else{
+                $(".toggleMenu").removeClass("active");
+                $(".topMenu").stop().animate({left:"-100%"},300);
+            }
+            
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="toggleMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="topMenu">
+        <nav class="topNavi">
+            <a href="#">Lorem</a>
+            <a href="#">ipsum</a>
+            <a href="#">dolor</a>
+            <a href="#">Lorem</a>
+        </nav>
+    </div>
+</body>
+</html>
