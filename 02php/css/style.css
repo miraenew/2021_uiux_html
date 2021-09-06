@@ -1,0 +1,50 @@
+@charset "UTF-8";
+#header {
+    width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.gnb li {
+    float: left;
+    width: calc(100% / 6);
+    background: rgb(24, 216, 104);
+}
+.gnb li:hover {
+    background: rgb(153, 187, 31);
+}
+.gnb a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+.visual {
+    height: 300px;
+    background: rgb(100, 182, 33);
+}
+.contents {
+    width: 1200px;
+    background: rgb(11, 92, 31);
+    margin: 0 auto;
+}
+.contents .section {
+    width: 900px;
+    height: 1000px;
+    background: #a11d1d;
+    float: left;
+}
+.contents .aside {
+    width: 280px;
+    height: 1000px;
+    background: rgb(28, 175, 138);
+    float: right;
+}
+#footer {
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    background: rgb(36, 70, 182);
+}
