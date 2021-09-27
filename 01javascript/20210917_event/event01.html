@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        .box span {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Maiores repellendus possimus </div>eaque debitis facere rem a dicta, dignissimos beatae explicabo
+       laudantium at ducimus, repellat <span>deleniti obcaecati</span> est deserunt adipisci sed.</div>
+    <button class="btn" onclick="boxColor()">클릭</button>
+    <script>
+        //버튼 class .btn 클릭해서 리스너등록 (.box의 폰트색을 red로 변경)
+        //javascript
+        const btn = document.getElementsByClassName("btn");
+        const box = document.getElementsByClassName("box");
+        //2 리스너를 프로퍼티로 등록
+        btn[0].onclick = onBox;
+        function onBox(){
+            box[0].style.color = "red"
+        }
+        // btn[0].onclick = function(){
+        //     box[0].style.color = "red"
+        // }
+
+        //3 addEventListener() 메소드 활용
+        btn[0].addEventListener("click",function(){
+            box[0].style.color = "blue";
+            box[0].style.fontSize = "40px"
+        });
+        //span dom 구해서 =>컬렉션
+        const span = document.getElementsByTagName("span");
+        const spanSel = document.querySelectorALL(".box span");
+        // const spanAll = document.getElementsByClassName("box")[0].getElementsByTagName("span");
+        const spanAll = box[0].getElementsByTagName("span");
+        btn[0].addEventListener("click",function(){
+            // span[0].style.color = "yellow"
+        
+        // btn[0].addEventListener("click",onBox);
+        // function onBox(){}
+        for(let i=0;i<spanAll.length;i++){
+            spanSel[i].style.color = "blue"
+        }
+    });
+        //jquery
+        // $(".btn").click(function(){
+        //     $(".box").css("color","red")
+        // })
+    </script>
+</body>
+</html>
