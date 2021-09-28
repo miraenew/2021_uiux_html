@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("p").hide()
+            // $("p").eq(0).hide()
+            $("p").eq(0).css("background-color","red"); //set
+            let pBg = $("p").eq(0).css("background-color") //get
+            console.log(pBg)
+            console.log($("p").length);
+
+            $(".btn").on("click",function(){
+                $("p").eq(1).css({"background":"skyblue", "border":"1px solid #000","position":"releative","left":"20px"})
+            });
+            $(".btn1").click(function(){
+                $("p").eq(1).css({
+                    "background":"white",
+                    "border":"initial",
+                    "position":"initial"
+                });
+                //$("p").eq(1).attr("style","")
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="btn">변경</button>
+    <button class="btn1">원래대로</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam dolorem nihil dignissimos. Optio, adipisci quam nemo voluptas sed voluptate, quibusdam impedit cupiditate debitis libero expedita perferendis placeat qui modi!</p>
+    <p>Quidem sed incidunt eius consequatur praesentium perspiciatis corrupti nisi quas recusandae maxime quos molestiae neque necessitatibus, voluptatum animi mollitia. Fuga hic, laborum reiciendis eos iste expedita et consectetur repudiandae assumenda.</p>
+    <p>Necessitatibus repellendus est consectetur at tempore dolore reprehenderit eaque accusamus corrupti cupiditate molestiae, corporis fugit ut veritatis aperiam tenetur sed obcaecati perspiciatis. Provident odio impedit, repudiandae eveniet error ea voluptatibus!</p>
+    <p>Quis, adipisci porro facere praesentium, veniam repellendus esse iusto quaerat harum minus nemo tempora dolores neque! Debitis esse, explicabo optio quo iste voluptate perspiciatis nihil assumenda necessitatibus eligendi odio consequuntur!</p>
+</body>
+</html>
