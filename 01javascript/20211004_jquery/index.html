@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <style>
+        .box {
+            background: #f00;
+        }
+    </style>
+    <script>
+        //제이쿼리 버전
+
+        $(document).ready(function(){
+
+            const tHtml = "신미래";
+            $(".btn").click(function(){
+                $("p").hide();
+                $("body").append(`<div class="box">${tHtml}</div>`);
+            });
+            
+            $("body").prepend("자식노드추가1")
+        });
+    </script>
+</head>
+<body>
+<p>Lorem ipsum dolor sit</p>  
+<button class="btn">클릭</button>
+
+<script>
+    //자바 스크립트 버전
+
+    // const btn = document.querySelector(".btn");
+    // const pTag = document.querySelector("p");
+    // btn.onclick = function(){
+    //     pTag.style.display = "none";
+    // };
+</script>
+</body>
+</html>

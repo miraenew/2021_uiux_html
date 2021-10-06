@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav h1 {
+    text-align: center;
+}
+.menu li {
+    float: left;
+    width: 20%;
+    position: relative;
+    transition: 0.3s;
+}
+.menu li::before {
+    content: "";
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu li.active:before,
+.menu li:hover:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+.menu li>a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+.bar {
+    width: 200px;
+    height: 5px;
+    background: #f00;
+    position: relative;
+    left: calc( 200px * 0 );
+    transition: 0.3s;
+}
+.visual {
+    height: 200px;
+    background: rgb(226, 157, 8);
+}
+.visual.sub1 {
+    background: rgb(16, 124, 148);
+}
+.visual.sub2 {
+    background: rgb(167, 228, 26);
+}
+.visual.sub3 {
+    background: url(../../images/pc01.jpg) no-repeat; background-size: cover;
+}
+.visual.sub4 {
+    background: rgb(255, 204, 0);
+}
+.visual.sub5 {
+    background: url(../../images/pc02.jpg) no-repeat; background-size: cover;
+}
+.visual h2 {
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
