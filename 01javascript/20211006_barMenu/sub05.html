@@ -26,28 +26,7 @@
         <h2>sub5</h2>
     </div>
     <script>
-        function nowMenu(menu){
-    if(menu == "main"){
-        console.log("메인연결됨");
-    }else{
-        console.log("서브페이지")
-    }
-    // $(".menu li").hover(function(){},function(){})
-$(".menu li").hover(function(){
-    let menuLi = $(this).index()
-
-    if(menu == "main"){
-        $(".bar").css("opacity",1)
-    }
-
-    $(".bar").css("left",200*menuLi)
-},function(){
-    if(menu == "main"){
-        $(".bar").css("opacity",0)
-    }
-    $(".bar").css("left",200*menu)
-});
-}
+        
         nowMenu(4);
     </script>
 </body>
