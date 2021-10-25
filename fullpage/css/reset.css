@@ -1,0 +1,15 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
