@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4141AF;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:0.3;}
+	.st4{fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="250" cy="237.7" r="229.7"/>
+<g>
+	<g>
+		<path class="st1" d="M439.8,306.2C439.8,411,354.8,496,250,496S60.2,411,60.2,306.2s85-128.4,189.8-128.4S439.8,201.4,439.8,306.2
+			z"/>
+		<path class="st2" d="M439.8,306.2C439.8,411,354.8,496,250,496S60.2,411,60.2,306.2s85-128.4,189.8-128.4S439.8,201.4,439.8,306.2
+			z"/>
+	</g>
+	<line class="st3" x1="58.2" y1="121.8" x2="58.2" y2="157.8"/>
+	<line class="st3" x1="4.2" y1="175.8" x2="40.2" y2="175.8"/>
+	<line class="st3" x1="4.2" y1="498" x2="40.2" y2="498"/>
+	<line class="st3" x1="58.2" y1="552" x2="58.2" y2="516"/>
+	<line class="st3" x1="441.8" y1="121.8" x2="441.8" y2="157.8"/>
+	<line class="st3" x1="495.8" y1="175.8" x2="459.8" y2="175.8"/>
+	<line class="st3" x1="495.8" y1="498" x2="459.8" y2="498"/>
+	<line class="st3" x1="441.8" y1="552" x2="441.8" y2="516"/>
+</g>
+<line class="st4" x1="180.8" y1="117.9" x2="180.8" y2="181.7"/>
+<line class="st4" x1="319.2" y1="117.9" x2="319.2" y2="181.7"/>
+<line class="st4" x1="250" y1="112.4" x2="250" y2="176.2"/>
+<circle cx="180.8" cy="282.8" r="9.3"/>
+<circle cx="319.2" cy="282.8" r="9.3"/>
+<g>
+	<path class="st2" d="M250,390.5c18.4,0,34.2,11.5,40.5,27.7c11.9-11,19.4-26.7,19.4-44.2H190.1c0,17.5,7.5,33.2,19.4,44.2
+		C215.8,402,231.6,390.5,250,390.5z"/>
+	<path class="st2" d="M290.5,418.2c-6.3-16.2-22-27.7-40.5-27.7s-34.2,11.5-40.5,27.7c10.7,9.8,24.9,15.7,40.5,15.7
+		S279.8,427.9,290.5,418.2z"/>
+</g>
+</svg>

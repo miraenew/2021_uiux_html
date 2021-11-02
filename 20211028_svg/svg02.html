@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 200px;}
+        
+    </style>
+</head>
+<body>
+    <div class="box"><img src="svg_face01.svg" alt=""></div>
+    <div class="box2"></div>
+    <style>
+        #svg_face {
+            width: 500px; height: 500px; background: #ccc;
+        }
+        .face{
+            transform: translateY(0);
+            
+        }
+        #svg_face.active .face {
+            animation: faceAni 0.5s alternate infinite; 
+        }
+        @keyframes faceAni {
+            to{transform: translateY(-10px);}
+        }
+    </style>
+    
+<svg class="active" id="svg_face" xmlns="http://www.w3.org/2000/svg" width="491.6" height="546" style="enable-background:new 0 0 491.6 546" xml:space="preserve">
+  <style>
+    .st2{fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10}
+  </style>
+  <circle cx="245.8" cy="231.7" r="229.7" style="fill:#4141af;stroke:#000;stroke-width:4;stroke-miterlimit:10"/>
+      <path d="M435.6 300.2c0 104.8-85 189.8-189.8 189.8S56 405 56 300.2s85-128.4 189.8-128.4 189.8 23.6 189.8 128.4z" style="fill:#fff"/>
+      <path class="st2" d="M435.6 300.2c0 104.8-85 189.8-189.8 189.8S56 405 56 300.2s85-128.4 189.8-128.4 189.8 23.6 189.8 128.4z"/>
+      <path d="M54 115.8v36m-54 18h36M0 492h36m18 54v-36m383.6-394.2v36m54 18h-36m36 322.2h-36m-18 54v-36" style="stroke-width:.3;fill:none;stroke:#000"/>
+      <path d="M176.6 111.9v63.8M315 111.9v63.8m-69.2-69.3v63.8" style="stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;fill:none;stroke:#000"/>
+      <g class="face">
+      <circle cx="176.6" cy="276.8" r="9.3"/>
+      <circle cx="315" cy="276.8" r="9.3"/>
+      <path class="st2" d="M245.8 384.5c18.4 0 34.2 11.5 40.5 27.7 11.9-11 19.4-26.7 19.4-44.2H185.9c0 17.5 7.5 33.2 19.4 44.2 6.3-16.2 22.1-27.7 40.5-27.7z"/>
+      <path class="st2" d="M286.3 412.2c-6.3-16.2-22-27.7-40.5-27.7s-34.2 11.5-40.5 27.7c10.7 9.8 24.9 15.7 40.5 15.7s29.8-6 40.5-15.7z"/>
+  </g>
+</svg>
+<script>
+    document.querySelector("#svg_face").addEventListener("click",function(){
+        this.classList.toggle("active");
+    })
+</script>
+</body>
+</html>

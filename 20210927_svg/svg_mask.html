@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mask</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;justify-content: center;
+            align-items: center;
+        }
+        .wrap {width: 300px; height: 300px;}
+        .cls-2.eye {
+            fill: #231f20;
+            transform-origin: 55% 50%;
+            animation: eye 1s alternate infinite;
+        }
+        @keyframes eye {
+            80% {
+                transform: scaleY(1);
+            }
+            100% {
+                transform: scaleY(0.2);
+            }
+        }
+        .cls-4 {fill: #ed1c24;}
+        .mask1 {stroke:none;fill:#000}
+        .myface {
+            transform: translateX(-10px);
+            animation: faceAni 1s alternate infinite;
+        }
+        @keyframes faceAni {
+            to {transform: translateX(-30px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159 173">
+            <defs>
+              <style>
+                .cls-2{stroke-miterlimit:10;stroke:#fff}.cls-4{fill:red}
+              </style>
+            </defs>
+            <path d="M228.5 85.5a21 21 0 1 0-41.87 2.26 79.07 79.07 0 0 0-74.26 0 21 21 0 1 0-23.08 18.62 79 79 0 1 0 120.42 0A21 21 0 0 0 228.5 85.5Z" transform="translate(-70 -64)" style="stroke-miterlimit:10;stroke:#009245;fill:#fff"/>
+            <circle class="cls-2" cx="53.5" cy="65.5" r="4"/>
+            <circle class="cls-2" cx="107.5" cy="65.5" r="4"/>
+            <path d="M180.5 182.5a30 30 0 0 1-60 0" transform="translate(-70 -64)" style="stroke:#000;stroke-linecap:round;stroke-miterlimit:10;fill:#fff"/>
+            <ellipse class="cls-4" cx="38.5" cy="103" rx="12.5" ry="6"/>
+            <ellipse class="cls-4" cx="122.5" cy="103" rx="12.5" ry="6"/>
+          </svg>
+    </div>
+</body>
+</html>
