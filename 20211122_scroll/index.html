@@ -24,9 +24,11 @@
             opacity: 0;
         }
         .container {
-            width: 1000px; height: 500px;
+            width: 1000px; 
             position: absolute; top: 1500px;
-            background: skyblue;
+            background: skyblue; left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
         }
         @media screen and (min-width:700px) {
             .content1 {
@@ -38,7 +40,7 @@
         }
         @media screen and (max-width:699px) {
             .content1, .content2 {
-                position: fixed;  bottom: 50%;
+                position: fixed;  bottom: 50px;
                 left: 50%; margin-left: -150px;
             }
         }
@@ -63,6 +65,7 @@
             <img src="img/char/character_astronaut_drift.svg" alt=""
             data-0="display:none"
             data-400="display:block"
+            data-800="display:none"
             >
             <img src="img/char/character_astronaut_excited.svg" alt=""
             data-0="display:none"
@@ -75,18 +78,23 @@
                 data-340="opacity:1"
                 data-480="opacity:0"
                 >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, odio!
+                    1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, odio!
                 </div>
                 <div class="content2"
                 data-0="opacity:0"
+                data-420="opacity:0"
                 data-520="opacity:1"
                 data-640="opacity:1"
                 data-780="opacity:0"
                 >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ratione.
+                    2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ratione.
                 </div>
             </div>
-            <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugit?</div>
+            <div class="container"
+            data-0="width:1000px"
+            data-800="width:1000px"
+            data-1000="width:1500px"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugit?</div>
         </div>
     </section>
     <script>
@@ -105,6 +113,7 @@
 
             document.querySelector(".scroll").innerHTML = scrollY;
             document.querySelector(".scrollHeight").innerHTML = wHeight;
+            
         }
         viewer();
     </script>
